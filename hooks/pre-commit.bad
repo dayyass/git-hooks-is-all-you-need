@@ -1,0 +1,2 @@
+echo "Hello, this is pre-commit hook!"
+exit 1
