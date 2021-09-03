@@ -1,0 +1,99 @@
+repos:
+- repo: local
+  hooks:
+    - id: isort
+      name: isort
+      entry: isort
+      language: python
+      args: ["--profile", "black"]
+      types: [python]
+
+    - id: black
+      name: black
+      entry: black
+      language: python
+      types: [python]
+
+    - id: mypy
+      name: mypy
+      entry: mypy
+      language: python
+      types: [python]
+
+    # pre-commit-hooks
+    - id: flake8
+      name: flake8
+      entry: flake8
+      language: python
+      args: ["--ignore", "E501,W503"]
+      types: [python]
+
+    # pre-commit-hooks
+    - id: check-json
+      name: check-json
+      entry: check-json
+      language: python
+      types: [json]
+
+    # pre-commit-hooks
+    - id: check-yaml
+      name: check-yaml
+      entry: check-yaml
+      language: python
+      types: [yaml]
+
+    # pre-commit-hooks
+    - id: name-tests-test
+      name: name-tests-test
+      entry: name-tests-test
+      language: python
+      args: ['--django']
+      files: '\*test\*'
+      types: [python]
+
+    # pre-commit-hooks
+    - id: debug-statements
+      name: debug-statements
+      entry: debug-statement-hook
+      language: python
+      types: [python]
+
+    # pre-commit-hooks
+    - id: end-of-file-fixer
+      name: end-of-file-fixer
+      entry: end-of-file-fixer
+      language: python
+      types: [python]
+
+#    - id: no-commit-to-branch
+#      name: no-commit-to-branch
+#      entry: no-commit-to-branch
+#      language: python
+#      args: ["--branch", "master", "--branch", "main"]
+
+    # pre-commit-hooks
+    - id: trailing-whitespace
+      name: trailing-whitespace
+      entry: trailing-whitespace-fixer
+      language: python
+      types: [python]
+
+    # pre-commit-hooks
+    - id: check-docstring-first
+      name: check-docstring-first
+      entry: check-docstring-first
+      language: python
+      types: [python]
+
+    # pre-commit-hooks
+    - id: requirements-txt-fixer
+      name: requirements-txt-fixer
+      entry: requirements-txt-fixer
+      language: python
+      files: 'requirements\*.txt'
+
+    # pre-commit-hooks
+    - id: check-added-large-files
+      name: check-added-large-files
+      entry: check-added-large-files
+      language: python
