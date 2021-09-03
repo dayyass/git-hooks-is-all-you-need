@@ -48,7 +48,7 @@ repos:
       entry: name-tests-test
       language: python
       args: ['--django']
-      files: '\*test\*'
+      files: '.*test.*\.py$'
       types: [python]
 
     # pre-commit-hooks
@@ -90,7 +90,7 @@ repos:
       name: requirements-txt-fixer
       entry: requirements-txt-fixer
       language: python
-      files: 'requirements\*.txt'
+      files: 'requirements.*\.txt$'
 
     # pre-commit-hooks
     - id: check-added-large-files
