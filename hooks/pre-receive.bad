@@ -1,2 +1,0 @@
-echo "Hello, this is pre-receive hook!"
-exit 1
