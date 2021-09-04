@@ -36,7 +36,9 @@ pip install pre-commit
 pre-commit install
 ```
 
-3) Create pre-commit configuration file [.pre-commit-config.yaml](https://github.com/dayyass/git_hooks_is_all_you_need/blob/main/.pre-commit-config.yaml).
+3) Create pre-commit configuration file [.pre-commit-config.yaml](https://github.com/dayyass/git_hooks_is_all_you_need/blob/main/.pre-commit-config.yaml).<br>
+Alternatively, you can use [local configuration](https://github.com/dayyass/git_hooks_is_all_you_need/blob/main/.pre-commit-config_local.yaml).
+
 
 4) Create [main.py](https://github.com/dayyass/git_hooks_is_all_you_need/blob/main/main_before_hooks.py) file.<br>
 Make commit. Pre-commit library will reformat file according to PEP8.<br>
@@ -56,3 +58,9 @@ git remote add origin ../remote_repo.git
 
 3) Create executable (`chmod +x`) pre-receive [hook](https://github.com/dayyass/git_hooks_is_all_you_need/blob/main/hooks/pre-receive.good) on "remote" (path: `../remote_repo.git/hooks/pre-receive`).<br>
 Make push and see the result.
+
+### Reference
+Useful links:
+- git hooks intro: [link](https://githooks.com)
+- git hooks usage: [link](https://git-scm.com/book/en/v2/Customizing-Git-Git-Hooks)
+- pre-commit page: [link](https://pre-commit.com)
