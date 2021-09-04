@@ -97,3 +97,10 @@ repos:
       name: check-added-large-files
       entry: check-added-large-files
       language: python
+
+#    - id: unittest
+#      name: unittest
+#      entry: python -m unittest discover
+#      language: python
+#      always_run: true
+#      pass_filenames: false
