@@ -19,7 +19,7 @@ ls -lah .git/hooks
  - bash [hook](https://github.com/dayyass/git_hooks_is_all_you_need/blob/main/hooks/pre-commit.good) with exit code 0
  - bash [hook](https://github.com/dayyass/git_hooks_is_all_you_need/blob/main/hooks/pre-commit.bad) with exit code 1
  - python [hook](https://github.com/dayyass/git_hooks_is_all_you_need/blob/main/hooks/pre-commit.good.py) with exit code 0
- 
+
 Make commit after each step. You'll see different results.
 
 ### 2. Python pre-commit library
