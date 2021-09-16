@@ -1,7 +1,7 @@
 ## Git Hooks Tutorial
 
 My public talk about this project at Sberloga:<br>
-[Git Hooks Is All You Need](https://youtu.be/92OMAtdVIAs)
+[**Git Hooks Is All You Need**](https://youtu.be/92OMAtdVIAs)
 
 ### 1. Git Hooks 101
 
