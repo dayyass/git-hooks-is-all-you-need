@@ -22,6 +22,7 @@ repos:
       args: ['--django']
     - id: debug-statements
     - id: end-of-file-fixer
+      types: [python]
 #    - id: no-commit-to-branch
 #      args: ["--branch", "master", "--branch", "main"]
     - id: trailing-whitespace
