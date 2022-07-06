@@ -67,3 +67,6 @@ Useful links:
 - git hooks intro: [link](https://githooks.com)
 - git hooks usage: [link](https://git-scm.com/book/en/v2/Customizing-Git-Git-Hooks)
 - pre-commit page: [link](https://pre-commit.com)
+
+### Thanks
+Thanks to [Anastasiya](https://github.com/TabalinaAnastasia) for help with jupyter notebook hooks!
